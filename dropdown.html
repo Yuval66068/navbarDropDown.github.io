@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dropDown</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav {
+        width: 515px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+      }
+      ul {
+        list-style: none;
+        background-color: #22438c;
+      }
+      ul li {
+        display: inline-block;
+        position: relative;
+      }
+      ul li a {
+        display: block;
+        padding: 20px 25px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+      }
+      ul li ul.dropdown li {
+        display: block;
+      }
+      ul li ul.dropdown {
+        width: 100%;
+        background: #22438c;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        text-align: center;
+      }
+      ul li a:hover {
+        background-color: chocolate;
+      }
+      ul li:hover ul.dropdown {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="#">Languages</a>
+          <ul class="dropdown">
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">PHYTON</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+          <ul class="dropdown">
+            <li><a href="#">Our Company</a></li>
+            <li><a href="#">Our Product</a></li>
+            <li><a href="#">Technology</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+          <ul class="dropdown">
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Mail</a></li>
+            <li><a href="#">Phone</a></li>
+            <li><a href="#">Fax</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
